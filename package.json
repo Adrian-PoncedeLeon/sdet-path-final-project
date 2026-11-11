@@ -1,0 +1,26 @@
+{
+  "name": "sdet-path---final-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test:ui": "playwright test",
+    "test:ui:list": "playwright test --list",
+    "test:api": "playwright test --config=playwright.api.config.ts",
+    "test:api:list": "playwright test --config=playwright.api.config.ts --list",
+    "typecheck": "tsc --noEmit"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@playwright/test": "^1.65.0",
+    "@types/node": "^26.6.6",
+    "ajv": "^8.20.0",
+    "typescript": "^7.0.2"
+  }
+}
