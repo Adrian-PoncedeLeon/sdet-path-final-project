@@ -1,10 +1,13 @@
-import { expect, test } from "@playwright/test";
+import { expect, test } from "../support/uiFixtures";
 import { CartPage } from "../pages/CartPage";
 import { InventoryPage } from "../pages/InventoryPage";
 import { loginAsStandardUser } from "../support/authentication";
 
-test("adds products to the cart and verifies its contents", async ({ page }) => {
-  await loginAsStandardUser(page);
+test("adds products to the cart and verifies its contents", async ({
+  page,
+  uiCredentials,
+}) => {
+  await loginAsStandardUser(page, uiCredentials.standardUser);
 
   const inventoryPage = new InventoryPage(page);
   await inventoryPage.addProductToCart("Sauce Labs Backpack");
