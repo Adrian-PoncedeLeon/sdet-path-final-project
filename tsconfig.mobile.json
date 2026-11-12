@@ -1,0 +1,4 @@
+{
+  "extends": "./tsconfig.json",
+  "include": ["wdio.android.conf.ts", "tests/mobile/**/*.ts"]
+}

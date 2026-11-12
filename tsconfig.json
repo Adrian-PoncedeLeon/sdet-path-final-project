@@ -4,7 +4,7 @@
     "module": "Node16",
     "moduleResolution": "Node16",
     "resolveJsonModule": true,
-    "types": ["node"],
+    "types": ["node", "mocha", "@wdio/globals/types"],
     "strict": true,
     "esModuleInterop": true,
     "skipLibCheck": true,
@@ -13,7 +13,9 @@
   "include": [
     "playwright.config.ts",
     "playwright.api.config.ts",
+    "wdio.android.conf.ts",
     "tests/ui/**/*.ts",
-    "tests/api/**/*.ts"
+    "tests/api/**/*.ts",
+    "tests/mobile/**/*.ts"
   ]
 }
