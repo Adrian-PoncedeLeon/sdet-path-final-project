@@ -8,5 +8,5 @@ Feature: SauceDemo shopping cart
       | Sauce Labs Bike Light |
     And I open the shopping cart
     Then the cart should contain exactly these products
-      | Sauce Labs Backpack  |
+      | Sauce Labs Backpack (intentional failure) |
       | Sauce Labs Bike Light |

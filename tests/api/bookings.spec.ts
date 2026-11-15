@@ -8,7 +8,7 @@ const updatedBooking: Booking = bookingData.updatedBooking;
 
 test("lists booking identifiers", async ({ bookingClient }) => {
   const response = await bookingClient.getBookings();
-  expect(response.status()).toBe(200);
+  expect(response.status()).toBe(201);
 
   const bookings: unknown = await response.json();
   expect(Array.isArray(bookings)).toBe(true);

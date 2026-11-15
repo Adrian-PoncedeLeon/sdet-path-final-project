@@ -15,7 +15,7 @@ test("adds products to the cart and verifies its contents", async ({
   await inventoryPage.openCart();
 
   const cartPage = new CartPage(page);
-  await expect(cartPage.itemCount).toHaveText("2");
+  await expect(cartPage.itemCount).toHaveText("3");
   await expect.poll(() => cartPage.getItemNames()).toEqual([
     "Sauce Labs Backpack",
     "Sauce Labs Bike Light",
