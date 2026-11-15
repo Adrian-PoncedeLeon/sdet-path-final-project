@@ -1,4 +1,4 @@
-name: UI and API Tests
+name: Final project - UI and API Tests
 
 on:
   pull_request:
